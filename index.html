@@ -8,20 +8,32 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="font-sans text-gray-800">
-    <!-- Hero header with overlay -->
-    <header class="relative">
-        <img src="assets/home-cleaning.jpg" alt="Cleaning professional vacuuming sofa" class="w-full h-96 object-cover">
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <div class="text-center text-white px-4">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Magic Cleanerz</h1>
-                <p class="text-lg md:text-xl">Trusted home &amp; office cleaning in Kuala Lumpur</p>
-                <!-- Call‑to‑action button linking to WhatsApp -->
-                <a href="https://wa.me/60178795041" class="mt-6 inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg">Call / WhatsApp us</a>
+    <!-- Site navigation -->
+    <nav class="bg-gray-900 bg-opacity-80 text-white px-4 py-4 flex justify-between items-center fixed w-full top-0 left-0 z-50">
+        <a href="#home" class="text-2xl font-bold">Magic Cleanerz</a>
+        <div class="flex space-x-6">
+            <a href="#services" class="hover:text-gray-300">Services</a>
+            <a href="#why" class="hover:text-gray-300">Why Us</a>
+            <a href="#contact" class="hover:text-gray-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero header -->
+    <header id="home" class="relative h-[60vh] flex items-center justify-center">
+        <!-- Background image for hero -->
+        <img src="assets/home-cleaning.jpg" alt="Professional cleaners working in a Malaysian home" class="absolute inset-0 w-full h-full object-cover">
+        <!-- Hero overlay and content -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Your One‑Stop Cleaning Solution</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-6">Professional home &amp; office cleaning in Kuala Lumpur</p>
+            <div class="space-x-3">
+                <a href="https://wa.me/60178795041" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg">Book Now</a>
+                <a href="https://wa.me/60178795041" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg">WhatsApp Us</a>
             </div>
         </div>
     </header>
 
-    <main class="py-12">
+    <main class="py-12 mt-16">
         <!-- About section -->
         <section id="about" class="max-w-4xl mx-auto px-4 mb-16">
             <h2 class="text-3xl font-semibold mb-4">About Us</h2>
@@ -32,28 +44,55 @@
             </p>
         </section>
 
-        <!-- Services section -->
-        <section id="services" class="bg-gray-100 py-12">
-            <div class="max-w-5xl mx-auto px-4">
-                <h2 class="text-3xl font-semibold mb-8 text-center">Our Services</h2>
-                <div class="grid md:grid-cols-2 gap-8">
+        <!-- Services section with images -->
+        <section id="services" class="py-16 bg-gray-100">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-semibold text-center mb-10">Our Services</h2>
+                <div class="grid gap-10 md:grid-cols-2">
                     <!-- Home cleaning card -->
-                    <div class="bg-white rounded-lg shadow p-6 flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2">Home Cleaning</h3>
-                        <p class="mb-4 flex-grow text-gray-700">
-                            From regular housekeeping to deep cleans, we ensure your home stays fresh, organised and safe. We clean kitchens, bathrooms,
-                            bedrooms and living spaces with attention to detail.
-                        </p>
-                        <a href="https://wa.me/60178795041" class="text-green-600 hover:text-green-800 font-medium">Book now →</a>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img src="assets/home-cleaning.jpg" alt="Home cleaning service" class="h-56 w-full object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold mb-2">Home Cleaning</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">
+                                From regular housekeeping to deep cleans and move‑in/move‑out services, we keep your home fresh, organised and hygienic. We clean kitchens,
+                                bathrooms, bedrooms and living spaces with great attention to detail.
+                            </p>
+                            <a href="https://wa.me/60178795041" class="text-green-600 hover:text-green-800 font-medium">Book now →</a>
+                        </div>
                     </div>
                     <!-- Office cleaning card -->
-                    <div class="bg-white rounded-lg shadow p-6 flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2">Office Cleaning</h3>
-                        <p class="mb-4 flex-grow text-gray-700">
-                            Maintain a productive workspace with scheduled office cleans. We sanitise workstations, meeting rooms and common areas for a
-                            healthy environment for your team and clients.
-                        </p>
-                        <a href="https://wa.me/60178795041" class="text-green-600 hover:text-green-800 font-medium">Get a quote →</a>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img src="assets/office-cleaning.jpg" alt="Office cleaning service" class="h-56 w-full object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold mb-2">Office Cleaning</h3>
+                            <p class="text-gray-700 mb-4 flex-grow">
+                                Maintain a productive workspace with regular office cleans. We sanitise workstations, meeting rooms and common areas for a healthy environment
+                                for your team and clients.
+                            </p>
+                            <a href="https://wa.me/60178795041" class="text-green-600 hover:text-green-800 font-medium">Get a quote →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why choose us section -->
+        <section id="why" class="py-16">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-semibold mb-10">Why Choose Us</h2>
+                <div class="grid gap-8 md:grid-cols-3">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Local &amp; Professional Team</h3>
+                        <p class="text-gray-700">Our cleaners are professionally trained and deliver quality service every time. We understand local needs and communicate clearly.</p>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Flexible Scheduling</h3>
+                        <p class="text-gray-700">We work around your busy schedule – whether you need weekly, bi‑weekly or one‑off cleaning, we’re ready when you are.</p>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Transparent Pricing</h3>
+                        <p class="text-gray-700">Rates are charged per hour and tailored to the size of your space. Contact us via phone or WhatsApp for a quick quote.</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +113,7 @@
     <footer class="bg-gray-800 text-gray-300 py-6">
         <div class="max-w-4xl mx-auto px-4 text-center text-sm">
             <p>&copy; <script>document.write(new Date().getFullYear());</script> Magic Cleanerz. All rights reserved.</p>
-            <p class="mt-2">Photo by <a href="https://unsplash.com/photos/5TXz228u4eo" class="underline" target="_blank" rel="noopener noreferrer">Giorgio Trovato</a> on Unsplash.</p>
+            <p class="mt-2">Images are for illustrative purposes only.</p>
         </div>
     </footer>
 </body>
