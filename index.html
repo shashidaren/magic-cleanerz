@@ -1,260 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Magic Cleanerz — Home & Office Cleaning in Puchong & Subang Jaya</title>
-  <meta name="description" content="Professional home & office cleaning in Puchong & Subang Jaya. Flexible scheduling, vetted crew, eco-friendly options. Call/WhatsApp +60 17-879 5041." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic Cleanerz – Professional Cleaning Service</title>
   <style>
-    :root{
-      --brand:#059669; /* emerald-600 */
-      --ink:#0f172a;   /* slate-900 */
-      --soft:#f8fafc;  /* slate-50 */
+    /* Simple reset and typography */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
-    body{font-family:'Inter','Plus Jakarta Sans',system-ui,Segoe UI,Roboto,Arial,sans-serif}
-    .soft{box-shadow:0 10px 30px rgba(2,6,23,.06)}
-    .grid-pattern{background-image: radial-gradient(rgba(255,255,255,.10) 1px, transparent 1px);
-      background-size: 18px 18px; background-position: center}
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background: #0074d9;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2ecc40;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0074d9;
+      text-align: center;
+    }
+
+    /* About section */
+    #about p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Services section */
+    #services .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .service-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex: 1 1 30%;
+      text-align: center;
+    }
+
+    .service-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .service-item h3 {
+      margin-bottom: 0.5rem;
+      color: #0074d9;
+    }
+
+    /* Contact section */
+    #contact .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    #contact .contact-info a {
+      color: #0074d9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f1f1f1;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased">
-  <!-- NAV -->
-  <nav class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 lg:px-6 py-3 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 font-extrabold tracking-tight text-slate-900">
-        <svg class="w-6 h-6 text-emerald-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1.7 3.6 3.4 5.4 5 5.4s3.3-1.8 5-5.4c-1.7 10.8-5.8 16.2-10 20C7.8 18.2 3.7 12.8 2 2c1.7 3.6 3.4 5.4 5 5.4S10.3 5.6 12 2z"/></svg>
-        Magic Cleanerz
-      </a>
-      <div class="hidden md:flex items-center gap-7 text-[15px]">
-        <a href="#services" class="hover:text-emerald-700">Services</a>
-        <a href="#why" class="hover:text-emerald-700">Why Us</a>
-        <a href="#process" class="hover:text-emerald-700">Process</a>
-        <a href="#contact" class="hover:text-emerald-700">Contact</a>
-        <a href="https://wa.me/60178795041" class="bg-emerald-600 text-white px-4 py-2 rounded-xl font-semibold soft hover:bg-emerald-700">WhatsApp</a>
-      </div>
-      <a href="tel:+60178795041" class="md:hidden text-sm font-semibold text-emerald-700">+60 17-879 5041</a>
-    </div>
-  </nav>
+<body>
+  <!-- Hero Section -->
+  <header>
+    <h1>Magic Cleanerz</h1>
+    <p>Professional Cleaning Service in Puchong &amp; Subang Jaya</p>
+    <a class="btn" href="https://wa.me/60178795041" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </header>
 
-  <!-- HERO -->
-  <header class="pt-24">
-    <section class="max-w-7xl mx-auto px-4 lg:px-6">
-      <div class="rounded-3xl overflow-hidden soft bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 grid-pattern">
-        <div class="px-6 md:px-10 py-8 md:py-12 grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <p class="text-emerald-300 font-semibold mb-1">Puchong & Subang Jaya</p>
-            <h1 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
-              Spotless Homes & Offices — Friendly, Reliable, Fast
-            </h1>
-            <p class="mt-3 text-slate-300 text-[15px] leading-relaxed">
-              Professional cleaning with eco-friendly options and a reliable crew. Book via call or WhatsApp.
-            </p>
-            <div class="flex flex-wrap gap-3 mt-6">
-              <a href="#contact" class="bg-white text-slate-900 px-5 py-3 rounded-xl font-semibold soft hover:bg-emerald-50">Get a Quote</a>
-              <a href="https://wa.me/60178795041" class="px-5 py-3 rounded-xl font-semibold border border-white/30 text-white hover:bg-white/10">WhatsApp Us</a>
-            </div>
-            <ul class="mt-6 text-slate-300 text-xs grid grid-cols-2 gap-2">
-              <li class="rounded-xl border border-white/20 px-2 py-1">Flexible Scheduling</li>
-              <li class="rounded-xl border border-white/20 px-2 py-1">Insured</li>
-              <li class="rounded-xl border border-white/20 px-2 py-1">Supplies Available</li>
-              <li class="rounded-xl border border-white/20 px-2 py-1">Satisfaction Focused</li>
-            </ul>
-          </div>
-          <!-- hero tiles -->
-          <div class="grid grid-cols-2 gap-3">
-            <img src="assets/home-1.jpg" alt="Cleaner wiping living room table" class="h-32 md:h-36 w-full object-cover rounded-xl" loading="lazy" width="480" height="256">
-            <img src="assets/office-1.jpg" alt="Desk sanitising in modern office" class="h-32 md:h-36 w-full object-cover rounded-xl" loading="lazy" width="480" height="256">
-            <img src="assets/home-2.jpg" alt="Kitchen sink polish" class="h-32 md:h-36 w-full object-cover rounded-xl" loading="lazy" width="480" height="256">
-            <img src="assets/office-2.jpg" alt="Meeting room tidy up" class="h-32 md:h-36 w-full object-cover rounded-xl" loading="lazy" width="480" height="256">
-          </div>
+  <main class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Based in Puchong, Malaysia, Magic Cleanerz offers professional cleaning services
+        for homes and offices in the Subang Jaya and Puchong areas. Our trained staff are dedicated to keeping your
+        living and working spaces spotless so you can enjoy a healthier environment without lifting a finger.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <!-- Home Cleaning -->
+        <div class="service-item">
+          <!-- Using a generated image to illustrate our staff at work -->
+          <img src="assets/office-team1.png" alt="Cleaning staff" />
+          <h3>Home Cleaning</h3>
+          <p>
+            Comprehensive housekeeping for apartments, condos and landed houses. We dust, mop and disinfect to
+            keep your home sparkling.
+          </p>
+        </div>
+        <!-- Office Cleaning -->
+        <div class="service-item">
+          <!-- Office cleaning scenario -->
+          <img src="assets/office-team2.png" alt="Office cleaning" />
+          <h3>Office Cleaning</h3>
+          <p>
+            Reliable cleaning for workplaces, including desks, meeting rooms and common areas, leaving your
+            office neat and professional.
+          </p>
+        </div>
+        <!-- Deep Cleaning -->
+        <div class="service-item">
+          <!-- Deep cleaning scenario -->
+          <img src="assets/office-team3.png" alt="Deep cleaning" />
+          <h3>Deep Cleaning</h3>
+          <p>
+            Intensive scrubbing and sanitizing for seasonal or move‑in/move‑out cleaning. Perfect for restoring
+            heavily used spaces.
+          </p>
         </div>
       </div>
     </section>
-  </header>
 
-  <!-- TRUST BAR -->
-  <section class="max-w-7xl mx-auto px-4 lg:px-6 mt-6">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-slate-600">
-      <div class="bg-white rounded-xl border border-slate-200 p-3 text-center">DBKK/MBPJ Friendly</div>
-      <div class="bg-white rounded-xl border border-slate-200 p-3 text-center">Eco-friendly Options</div>
-      <div class="bg-white rounded-xl border border-slate-200 p-3 text-center">After-hours Office Slots</div>
-      <div class="bg-white rounded-xl border border-slate-200 p-3 text-center">Insured Crew</div>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-info">
+        <p>
+          Ready for a spotless space? Contact us via WhatsApp at
+          <a href="https://wa.me/60178795041" target="_blank" rel="noopener">+60&nbsp;178&nbsp;795&nbsp;041</a>.
+        </p>
+        <p>
+          We serve clients in Puchong and Subang Jaya.
+        </p>
+      </div>
+    </section>
+  </main>
 
-  <!-- SERVICES -->
-  <section id="services" class="py-14">
-    <div class="max-w-7xl mx-auto px-4 lg:px-6">
-      <div class="text-center mb-8">
-        <h2 class="text-2xl md:text-3xl font-extrabold">Services</h2>
-        <p class="text-slate-600 mt-2">Home and office cleaning with add-ons on request.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="bg-white rounded-2xl p-5 soft border border-slate-100">
-          <img src="assets/service-home.jpg" alt="Home cleaning" class="rounded-xl w-full h-40 object-cover mb-4" loading="lazy" width="640" height="360">
-          <h3 class="font-bold text-lg mb-2">Home Cleaning</h3>
-          <ul class="text-sm text-slate-600 space-y-1">
-            <li>• Weekly / Bi-weekly / One-off</li>
-            <li>• Bedrooms, bathrooms, kitchen</li>
-            <li>• Eco-friendly supplies available</li>
-          </ul>
-        </article>
-        <article class="bg-white rounded-2xl p-5 soft border border-slate-100">
-          <img src="assets/service-office.jpg" alt="Office cleaning" class="rounded-xl w-full h-40 object-cover mb-4" loading="lazy" width="640" height="360">
-          <h3 class="font-bold text-lg mb-2">Office & Commercial</h3>
-          <ul class="text-sm text-slate-600 space-y-1">
-            <li>• Desks, glass, pantry, washrooms</li>
-            <li>• After-hours scheduling</li>
-            <li>• Consumables restock (optional)</li>
-          </ul>
-        </article>
-        <article class="bg-white rounded-2xl p-5 soft border border-slate-100">
-          <img src="assets/service-deep.jpg" alt="Deep cleaning" class="rounded-xl w-full h-40 object-cover mb-4" loading="lazy" width="640" height="360">
-          <h3 class="font-bold text-lg mb-2">Deep / Move-In-Out</h3>
-          <ul class="text-sm text-slate-600 space-y-1">
-            <li>• Top-to-bottom detailed clean</li>
-            <li>• Inside cabinets & appliances</li>
-            <li>• Move-in / move-out checklist</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY US -->
-  <section id="why" class="py-14 bg-white">
-    <div class="max-w-7xl mx-auto px-4 lg:px-6">
-      <div class="text-center mb-8">
-        <h2 class="text-2xl md:text-3xl font-extrabold">Why Choose Us</h2>
-        <p class="text-slate-600 mt-2">Friendly crew, consistent results, easy booking.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl p-6 border border-slate-100 soft bg-slate-50">
-          <h3 class="font-semibold mb-2">Trained Team</h3>
-          <p class="text-slate-600 text-sm">Vetted staff working to clear SOPs and supervisor checks on request.</p>
-        </div>
-        <div class="rounded-2xl p-6 border border-slate-100 soft bg-slate-50">
-          <h3 class="font-semibold mb-2">Flexible Scheduling</h3>
-          <p class="text-slate-600 text-sm">Book weekdays, weekends, or after hours for offices.</p>
-        </div>
-        <div class="rounded-2xl p-6 border border-slate-100 soft bg-slate-50">
-          <h3 class="font-semibold mb-2">Transparent Quotes</h3>
-          <p class="text-slate-600 text-sm">Per-hour or per-job — final rates confirmed by phone or WhatsApp.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process" class="py-14">
-    <div class="max-w-7xl mx-auto px-4 lg:px-6">
-      <div class="text-center mb-8">
-        <h2 class="text-2xl md:text-3xl font-extrabold">How It Works</h2>
-        <p class="text-slate-600 mt-2">Simple steps to a spotless space.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-2xl p-6 soft border border-slate-100">
-          <h3 class="font-semibold">1) Get in Touch</h3>
-          <p class="text-sm text-slate-600 mt-1">Call/WhatsApp with your location, rooms, and preferred time.</p>
-        </div>
-        <div class="bg-white rounded-2xl p-6 soft border border-slate-100">
-          <h3 class="font-semibold">2) Confirm Quote</h3>
-          <p class="text-sm text-slate-600 mt-1">We confirm scope and a per-hour or per-job rate.</p>
-        </div>
-        <div class="bg-white rounded-2xl p-6 soft border border-slate-100">
-          <h3 class="font-semibold">3) We Clean</h3>
-          <p class="text-sm text-slate-600 mt-1">Punctual crew arrives with supplies (on request) and gets it done.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS (names removed) -->
-  <section class="py-14 bg-white">
-    <div class="max-w-7xl mx-auto px-4 lg:px-6">
-      <div class="text-center mb-8">
-        <h2 class="text-2xl md:text-3xl font-extrabold">What Clients Say</h2>
-        <p class="text-slate-600 mt-2">Reliable, friendly, consistent.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <figure class="bg-slate-50 rounded-2xl p-6 soft border border-slate-100">
-          <blockquote class="text-slate-700">“They left our condo spotless and arrived right on time.”</blockquote>
-        </figure>
-        <figure class="bg-slate-50 rounded-2xl p-6 soft border border-slate-100">
-          <blockquote class="text-slate-700">“Easy to book on WhatsApp, and great attention to detail.”</blockquote>
-        </figure>
-        <figure class="bg-slate-50 rounded-2xl p-6 soft border border-slate-100">
-          <blockquote class="text-slate-700">“Our office looks brand-new after every session.”</blockquote>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="py-14">
-    <div class="max-w-7xl mx-auto px-4 lg:px-6 grid md:grid-cols-2 gap-8 items-start">
-      <div>
-        <h2 class="text-2xl md:text-3xl font-extrabold">Get a Free Quote</h2>
-        <p class="text-slate-600 mt-2">We’ll confirm rates by phone or WhatsApp.</p>
-        <ul class="mt-5 space-y-2 text-slate-700">
-          <li><strong>Phone/WhatsApp:</strong> <a class="text-emerald-700 hover:underline" href="https://wa.me/60178795041">+60 17-879 5041</a></li>
-          <li><strong>Email:</strong> <a class="text-emerald-700 hover:underline" href="mailto:hello@magic-cleanerz.my">hello@magic-cleanerz.my</a></li>
-          <li><strong>Service Area:</strong> Puchong & Subang Jaya</li>
-        </ul>
-      </div>
-      <form action="https://formspree.io/f/your-id" method="POST" class="bg-white rounded-2xl p-6 soft border border-slate-100">
-        <div class="grid md:grid-cols-2 gap-4">
-          <div><label class="text-sm font-medium">Name</label><input required name="name" class="w-full mt-1 rounded-xl border border-slate-200 px-3 py-2"></div>
-          <div><label class="text-sm font-medium">Phone</label><input required name="phone" class="w-full mt-1 rounded-xl border border-slate-200 px-3 py-2"></div>
-        </div>
-        <div class="mt-4"><label class="text-sm font-medium">Service</label>
-          <select name="service" class="w-full mt-1 rounded-xl border border-slate-200 px-3 py-2">
-            <option>Home Cleaning</option><option>Office & Commercial</option><option>Deep / Move-In-Out</option><option>Other</option>
-          </select>
-        </div>
-        <div class="mt-4"><label class="text-sm font-medium">Notes</label>
-          <textarea name="notes" rows="4" class="w-full mt-1 rounded-xl border border-slate-200 px-3 py-2" placeholder="Rooms, schedule, special requests…"></textarea>
-        </div>
-        <button class="mt-5 w-full bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl py-3 font-semibold">Send</button>
-        <p class="text-xs text-slate-500 mt-2">By submitting, you agree we may contact you about your request.</p>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="py-10 bg-slate-900 text-slate-300">
-    <div class="max-w-7xl mx-auto px-4 lg:px-6 grid md:grid-cols-4 gap-8">
-      <div>
-        <div class="text-white font-extrabold text-xl">Magic Cleanerz</div>
-        <p class="text-slate-400 mt-2 text-sm">Professional cleaning in Puchong & Subang Jaya.</p>
-      </div>
-      <div>
-        <div class="font-semibold text-white mb-3">Contact</div>
-        <ul class="space-y-2 text-sm">
-          <li><a href="tel:+60178795041" class="hover:text-white">+60 17-879 5041</a></li>
-          <li><a href="https://wa.me/60178795041" class="hover:text-white">WhatsApp</a></li>
-          <li><a href="mailto:hello@magic-cleanerz.my" class="hover:text-white">hello@magic-cleanerz.my</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="font-semibold text-white mb-3">Services</div>
-        <ul class="space-y-2 text-sm">
-          <li>Home Cleaning</li><li>Office & Commercial</li><li>Deep / Move-In-Out</li>
-        </ul>
-      </div>
-      <div>
-        <div class="font-semibold text-white mb-3">Follow</div>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-white">Facebook</a></li>
-          <li><a href="#" class="hover:text-white">Instagram</a></li>
-          <li><a href="#" class="hover:text-white">TikTok</a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="text-center text-slate-500 text-xs mt-6">© <script>document.write(new Date().getFullYear());</script> Magic Cleanerz. Images are illustrative.</p>
+  <footer>
+    &copy; 2025 Magic Cleanerz. All rights reserved.
   </footer>
 </body>
 </html>
